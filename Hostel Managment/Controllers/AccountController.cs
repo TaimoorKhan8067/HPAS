@@ -13,6 +13,8 @@ namespace Hostel_Managment.Controllers
         private static DatabaseController database;
         public static Account Verfiy_user(string rollno,string password)
         {
+            int n=0;
+            Console.WriteLine(n);
             Account modal = new Account();
             string query = "SELECT `id`,`username`,`designation` FROM `user` WHERE `id`=?rollno and `password`=?pass;";
             database = DatabaseController.getinstance();
