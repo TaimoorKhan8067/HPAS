@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Attendence.master.cs" Inherits="Hostel_Managment.Views.MasterPages.Attendence" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+    <title>HOSTEL MANAGMENT SYSTEM</title>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="../../css/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="../../css/masterpage.min.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 89%;
+            margin-left: 39px;
+        }
+        .auto-style2 {
+            margin-left: 0px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div>
+            <div id="wrapper">
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center">
+                   
+                    <div class="sidebar-brand-text mx-3">CFD HOSTELS</div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+                <hr class="sidebar-divider">
+                <div class="sidebar-heading">
+                    Attendance
+                   
+                </div>
+                  <li class="nav-item">
+                  
+                      <asp:LinkButton ID="LinkButton1" class="nav-link collapsed"  data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages" runat="server" >
+                          <i class="fas fa-fw fa-folder"></i>
+                        <span>Employees Attendance</span>
+                      </asp:LinkButton>
+                </li>
+                <hr class="sidebar-divider">
+                <div class="sidebar-heading">
+                    Category
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Menu2</span>
+                    </a>
+
+                </li>
+             
+            </ul>
+            <div id="content-wrapper" class="auto-style1">
+
+                 <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand"> Attendance</a>
+
+      <asp:Button ID="Button1" CssClass="btn btn-outline-primary my-2 my-sm-0" runat="server" Text="Logout"  CausesValidation="false"/>
+
+</nav>
+               <asp:ContentPlaceHolder ID="ContentBody" runat="server"></asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- Bootstrap core JavaScript-->
+        
+         <script src="../../js/jquery/jquery.js"></script>
+         <script src="../../js/Bootstrap/bootstrap.bundle.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        
+            <script src="../../js/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Custom scripts for all pages-->
+            <script src="../../js/MasterPage.min.js"></script>
+        </div>
+       
+        
+    </form>
+</body>
+</html>

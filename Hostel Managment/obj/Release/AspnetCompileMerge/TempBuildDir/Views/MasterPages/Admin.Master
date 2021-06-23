@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Hostel_Managment.Views.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+  <title>HOSTEL MANAGMENT SYSTEM</title>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="../../css/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="../../css/masterpage.min.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 89%;
+            margin-left: 39px;
+        }
+        .auto-style2 {
+            margin-left: 0px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="wrapper">
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                   
+                    <div class="sidebar-brand-text mx-3">CFD HOSTELS</div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <li class="nav-item active">
+                    <a class="nav-link">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+                <hr class="sidebar-divider">
+                <div class="sidebar-heading">
+                    Gate Pass
+                </div>
+                  <li class="nav-item">
+                      <asp:LinkButton ID="LinkButton1" class="nav-link collapsed"  data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages" runat="server" OnClick="gatepass_click">
+                          <i class="fas fa-fw fa-folder"></i>
+                        <span>Approve Gate Pass Request         
+                      </asp:LinkButton>
+                </li>
+                 <li class="nav-item">
+                      <asp:LinkButton ID="LinkButton3" class="nav-link collapsed"  data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages" runat="server" OnClick="LinkButton3_Click">
+                          <i class="fas fa-fw fa-folder"></i>
+                        <span>View Gate Pass Requests</span>
+                      </asp:LinkButton>
+                </li>
+                    <hr class="sidebar-divider">
+                <div class="sidebar-heading">
+                    Inventory
+                </div>
+                <li class="nav-item">
+                   <asp:LinkButton ID="LinkButton2" class="nav-link collapsed"  data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages" runat="server" OnClick="inventory_click">
+                          <i class="fas fa-fw fa-folder"></i>
+                        <span>Inventory</span>
+                      </asp:LinkButton>
+                </li>
+               <hr class="sidebar-divider">
+                <div class="sidebar-heading">
+                     Registered Students
+                </div>
+                  <li class="nav-item">
+                      <asp:LinkButton ID="registeredStudents" class="nav-link collapsed"  data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages" runat="server" OnClick="registeredStudents_Click">
+                          <i class="fas fa-fw fa-folder"></i>
+                        <span>View Registered Students</span>
+                      </asp:LinkButton>
+                </li>
+
+                <div class="sidebar-heading">
+                     Employee
+                </div>
+                  <li class="nav-item">
+                      <asp:LinkButton ID="LinkButton4" class="nav-link collapsed"  data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages" runat="server" onclick="new_employee_Click" >
+                          <i class="fas fa-fw fa-folder"></i>
+                        <span>Add New Employee</span>
+                      </asp:LinkButton>
+                </li>
+                
+               <hr class="sidebar-divider">
+                <div class="sidebar-heading">
+                     Mess
+                </div>
+                  <li class="nav-item">
+                      <asp:LinkButton ID="LinkButton5" class="nav-link collapsed"  data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages" runat="server" onclick="menu_Click" >
+                          <i class="fas fa-fw fa-folder"></i>
+                        <span>Mess Menu</span>
+                      </asp:LinkButton>
+                </li>
+            </ul>
+            <div id="content-wrapper" class="auto-style1">
+                <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand">Admin Panel</a>
+  <form class="form-inline">
+      <asp:Button ID="Button1" CssClass="btn btn-outline-primary my-2 my-sm-0" runat="server" Text="Logout" OnClick="Button1_Click" CausesValidation="false"/>
+  </form>
+</nav>
+                <asp:ContentPlaceHolder ID="ContentBody" runat="server"></asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- Bootstrap core JavaScript-->
+        
+         <script src="../../js/jquery/jquery.js"></script>
+         <script src="../../js/Bootstrap/bootstrap.bundle.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        
+            <script src="../../js/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Custom scripts for all pages-->
+            <script src="../../js/MasterPage.min.js"></script>
+        </div>
+    </form>
+</body>
+</html>

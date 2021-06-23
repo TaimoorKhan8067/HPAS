@@ -1,0 +1,74 @@
+﻿h1{
+    text-align:center;
+
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+form button {
+        width: 100px;
+        margin: 0 auto;
+       
+
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.search-box {
+    position: relative;
+    float: right;
+}
+
+    .search-box input {
+        height: 34px;
+        border-radius: 20px;
+        padding-left: 35px;
+        border-color: #ddd;
+        box-shadow: none;
+    }
+
+        .search-box input:focus {
+            border-color: #3FBAE4;
+        }
+
+    .search-box i {
+        color: #a0a5b1;
+        position: absolute;
+        font-size: 19px;
+        top: 8px;
+        left: 10px;
+    }
+.rightalign {
+    display: inline-block;
+    text-align: left;
+    float: right;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.img-responsive {
+  max-width: 90%; /* or to whatever you want here */
+  max-height: auto; /* or to whatever you want here */
+}
+.fit-image {
+    width: 100%;
+    object-fit: cover;
+    height: 300px; /* only if you want fixed height */
+}
